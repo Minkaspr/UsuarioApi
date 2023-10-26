@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UsuariosApi</string>
+
+    <string name="nombre_apellido"> %1$s %2$s </string>
+
+    <string-array name="genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>No binario</item>
+    </string-array>
+
+    <string-array name="estado">
+        <item>Inactivo</item>
+        <item>Activo</item>
+    </string-array>
+</resources>
