@@ -1,4 +1,4 @@
-package com.mk.usuariosapi;
+package com.mk.usuariosapi.model;
 
 public class Usuario{
     private int id;

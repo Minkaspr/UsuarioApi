@@ -1,4 +1,4 @@
-package com.mk.usuariosapi;
+package com.mk.usuariosapi.controller;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

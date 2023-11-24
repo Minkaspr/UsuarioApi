@@ -1,4 +1,4 @@
-package com.mk.usuariosapi;
+package com.mk.usuariosapi.ui.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.mk.usuariosapi.R;
+import com.mk.usuariosapi.model.Usuario;
+import com.mk.usuariosapi.ui.UsuarioGetPutActivity;
 
 import java.util.List;
 
@@ -30,7 +34,7 @@ public class UsuarioAdapter extends RecyclerView.Adapter<UsuarioAdapter.UsuarioV
                 if (position != RecyclerView.NO_POSITION) {
                     Usuario usuarioSeleccionado = usuarioList.get(position);
                     Log.d("Usuario seleccionado", "ID: " + usuarioSeleccionado.getId());
-                    Intent intent = new Intent(v.getContext(), UsuarioDetallesActivity.class);
+                    Intent intent = new Intent(v.getContext(), UsuarioGetPutActivity.class);
                     intent.putExtra("ID_USUARIO", usuarioSeleccionado.getId());
                     v.getContext().startActivity(intent);
                 }
